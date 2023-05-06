@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background-color: #000;
+    overflow: hidden;
+    user-select: none;
+}
+  
+#container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: grabbing;
+}
+
+img {
+    width: 300px;
+    height: 460px;
+    margin-right: 10px;
+    object-fit: cover;
+    object-position: 100% 50%;
+    pointer-events: none;
+    user-select: none;
+}
+
+.image:nth-child(1) {
+    margin-right: 0;
+}
